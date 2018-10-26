@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body, html{
+	height: 100%;
+	width: 100%;
+	background-image: radial-gradient(circle at center,#226f93, #08358e);
+	background-size: cover;
+	margin: 0;
+	font-family: "Trebuchet MS";
+
+}
+
+p{
+	text-align: justify;
+}
+
+.main-div{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	width: 645px;
+	margin-left: -322.5px;
+	height: 500px;
+	margin-top: -250px;
+}
+
+.top-div{
+	height: 40px;
+	overflow: hidden;
+}
+.top-left-div{
+	width: 105px;
+	height: 100%; 
+	float: left; 
+}
+.top-right-div{
+	height: 100%;
+	margin-left: 105px;
+	padding-left: 25px;
+}
+
+.bottom-div{
+	
+	height: 100%;
+	overflow: hidden;
+	color: white;
+	margin-top: 15px;
+}
+
+.top-button{
+	background-color: rgba(0,0,0,0.3);
+	width: 120px;
+	line-height: 30px;
+	border-radius: 15px;
+	
+	text-align: center;
+	cursor: pointer;
+
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-top: 5px;
+	
+}
+
+.top-button:hover{
+	background-color: rgba(0,0,0,0.6);
+}
+
+.div-contact{
+	display: none;
+}
+
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: "Arial";
+}
+
+.gross-button{
+	width: 50px;
+	height: 20px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border-radius: 8px;
+	line-height: 20px;
+	cursor: pointer;
+	text-align: center;
+    background-color: #002b72;
+    border: 1px solid #001538;
+}
+
+</style>
+</head>
+<body>
+	<div style="height:100%">
+		<div class="main-div">
+			<div class="top-div">
+				<div class="top-left-div">
+					<img style="height: 100%; width: 100%" src="logo.png">
+				</div>
+
+				<div class="top-right-div">
+					<div class="top-button"><a>Features</a></div>
+					<div class="top-button"><a>Download</a></div>
+					<div class="top-button"><a>Buy license</a></div>
+					<div class="top-button" id="button-contact" onclick="buttonContact_Click()"><a>Contact</a></div>
+				</div>
+
+			</div>
+			<div class="bottom-div">	
+				<div id="div-contact" class="div-contact">
+					<p>
+						In DELTA PLOTWARE we try to make a good and simple software that will dd dwadw dwandwn
+
+						If you are not satisfied with the product we are proving, you can always get a refund
+					</p>
+					<input type="text" value="" placeholder="Email">
+
+					<textarea name="Text1" cols="40" rows="5" style="height: 150px; resize: none;"></textarea>
+					
+					<div class="gross-button"><a>Send</a></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+function buttonContact_Click() {
+    document.getElementById("div-contact").style.display = "block";
+    document.getElementById("button-contact").style.color = "white";
+}
+</script>
+
+</html>
